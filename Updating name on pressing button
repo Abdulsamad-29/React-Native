@@ -1,16 +1,12 @@
-import React,{ useState } from 'react';
+import React,{useState} from 'react';
 
-import {
-  Text,
-  View,
-  Button,
-} from 'react-native';
+import {Text,View,Button,} from 'react-native';
 
 const App = () => {
     const [name, setName]= useState("Samad");
 
     function testName(){
-        setName("Sam")
+        setName("Abdul Samad")
     }
     return(
     <View>

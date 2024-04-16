@@ -1,0 +1,40 @@
+#External filename: style.js
+import React from 'react';
+import {
+  Text,
+  View,
+  Button,
+  TextInput,
+  StyleSheet,
+
+} from 'react-native';
+import ExStyles from './style'
+
+const App = () => {
+
+    return(
+    <View>
+        <Text style= {styles.textBox}> Style in React Native</Text>
+        <Text style= {styles.textBox}> Style in React Native</Text>
+        <Text style= {styles.textBox}> Style in React Native</Text>
+        <Text style= {ExStyles.textBox}> Style in React Native</Text>
+    </View>
+    );
+};
+
+const styles =StyleSheet.create(
+   {
+     textInput: {
+        color:'white',
+        fontSize: 25,
+        backgroundColor: 'blue',
+        marginBottom:10,
+        padding:10,
+        borderRadius:10,
+        height:100,
+        textAlignVertical: 'center',
+        borderColor:'red',
+        borderWidth: 2
+        }
+   }
+)

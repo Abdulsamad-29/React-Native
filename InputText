@@ -1,0 +1,32 @@
+import React, {useState} from 'react';
+
+import {Text,View,Button,TextInput,StyleSheet} from 'react-native';
+
+const App = () => {
+    const [name,setName] = useState("")
+    return(
+    <View>
+        <Text style={{ fontSize: 30}}> Your name is: {name}</Text>
+        <TextInput
+        style = {styles.textInput}
+        placeholder = 'Enter your name:'
+        value = {name}
+
+        onChangeText = {(text)=> setName(text)}
+        />
+        <Button title='Submit' onPress={()=> setName('')} />
+    </View>
+    );
+};
+
+const styles = StyleSheet.create(
+    {
+        textInput: {
+            fontSize:18,color:'black',borderWidth:2,borderColor:'blue',margin:10,
+
+        }
+    }
+)
+
+
+export default App;
